@@ -1,4 +1,4 @@
-function fiboLoop(num){
+function fib(num){
   var a = 1, b = 0, temp;
 
   while (num >= 0){
