@@ -14,4 +14,4 @@ function fib(num){
 
 const num = process.argv.slice(2);
 
-console.log('the number is', fib(num));
+console.log(fib(1));
