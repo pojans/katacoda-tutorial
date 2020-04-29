@@ -1,8 +1,16 @@
-function fib(num) {
-  if (num <= 1) return 1;
+function fiboLoop(num){
+  var a = 1, b = 0, temp;
 
-  return fib(num - 1) + fib(num - 2);
+  while (num >= 0){
+    temp = a;
+    a = a + b;
+    b = temp;
+    num--;
+  }
+
+  return b;
 }
+
 
 const num = process.argv.slice(2);
 
